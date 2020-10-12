@@ -10,7 +10,7 @@ import cucumber.api.java.en.Given;
 public class HooksClass extends BaseClass {
 	@Before
 	public void beforeExecution(Scenario scenario) {
-		System.out.println("Scenario Started Successfully....");
+		System.out.println("Scenario Getting Start....");
 	}
 
 	@Given("User is on demo bank application {string} in browser")
@@ -23,6 +23,6 @@ public class HooksClass extends BaseClass {
 	@After
 	public void afterExecution() {
 		closeBrowser();
-		System.out.println("Scenario Completed and Browser closed....");
+		System.out.println("Scenario Completed....");
 	}
 }
